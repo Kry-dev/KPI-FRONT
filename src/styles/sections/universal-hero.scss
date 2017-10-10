@@ -2,17 +2,18 @@
 .universal-hero {
   padding: 0;
 
-  .universal-slider{
-    padding: 0!important;
+  .universal-slider {
+    padding: 0 !important;
     width: 100% !important;
     margin-bottom: 0 !important;
   }
-  .slick-dots{
+
+  .slick-dots {
     display: none !important;
   }
 
-  .universal-slider-item{
+  .universal-slider-item {
     padding: 40px !important;
-    min-height: 450px!important;
+    min-height: 450px !important;
   }
 }

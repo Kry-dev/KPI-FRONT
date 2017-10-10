@@ -12,17 +12,27 @@
 @import "common/menu-custom-scroll.scss";
 @import "common/animate-text.scss";
 @import "common/slide-menu.scss";
-@import "common/media-queries.scss";
-
 
 //pages
 @import "sections/blog-page.scss";
 @import "sections/search-page.scss";
+@import "sections/events-page.scss";
+@import "sections/training-page.scss";
+//@import "sections/cognos-page.scss";
 @import "sections/contact-us-page.scss";
 
 //sections
+@import "sections/event-detail.scss";
 @import "sections/anchors-card.scss";
+@import "sections/careers.scss";
+@import "sections/knowledge.scss";
+//@import "sections/resources.scss";
+@import "sections/solutions.scss";
+@import "sections/testimonials.scss";
+@import "sections/title-card.scss";
+@import "sections/knowledge.scss";
 @import "sections/dropdown-card.scss";
+@import "sections/double-card.scss";
 @import "sections/triple-card.scss";
 @import "sections/video.scss";
 @import "sections/universal-types.scss";
@@ -31,3 +41,6 @@
 @import "sections/masonry.scss";
 @import "sections/icons-card.scss";
 @import "sections/blog-card.scss";
+
+//media
+@import "common/media-queries.scss";

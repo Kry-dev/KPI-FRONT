@@ -6,6 +6,7 @@
     margin: auto;
     flex-shrink: 0;
   }
+
   .universal-item-text {
     display: none;
   }
@@ -15,6 +16,7 @@
   .universal-item-img {
     display: none;
   }
+
   .universal-item-text {
     flex-basis: 100%;
     max-width: 780px;
@@ -25,28 +27,34 @@
 
 .type-3 {
   flex-direction: column;
+
   .universal-item-img {
-    padding: 0px;
+    padding: 0;
+
     img {
       width: 100%;
     }
   }
+
   .universal-item-text {
     text-align: center;
-    padding: 0px;
+    padding: 0;
   }
 }
 
 .type-4 {
   flex-direction: column;
+
   .universal-item-img {
-    padding: 0px;
+    padding: 0;
     margin-bottom: 40px;
   }
+
   .universal-item-text {
     text-align: center;
     padding: 0;
   }
+
   img {
     width: 100%;
   }
@@ -54,22 +62,26 @@
 
 .type-11 {
   flex-direction: column;
+
   .universal-item-img {
-    padding: 0px;
+    padding: 0;
     margin-bottom: 30px;
   }
+
   .universal-item-text {
     text-align: center;
-    padding: 0px;
+    padding: 0;
   }
 }
 
 .type-12 {
   flex-direction: column;
+
   .universal-item-img {
-    padding: 0px;
+    padding: 0;
     margin-bottom: 30px;
   }
+
   .universal-item-text {
     text-align: center;
     padding: 0;
@@ -78,10 +90,12 @@
 
 .type-5 {
   flex-direction: column;
+
   .universal-item-img {
     margin-bottom: 40px;
     flex-basis: 100%;
   }
+
   .universal-item-text {
     flex-basis: 100%;
     text-align: center;
@@ -90,6 +104,7 @@
 
 .universal-slider-item.type-5 {
   display: block;
+
   .universal-item-img {
     max-width: 45%;
     margin: auto;
@@ -102,6 +117,7 @@
     max-height: inherit;
     margin-bottom: 40px;
     flex-basis: 100%;
+
     img {
       margin: 0 auto;
       //margin-right: auto;
@@ -109,6 +125,7 @@
       max-height: inherit;
     }
   }
+
   .universal-item-text {
     display: none;
   }
@@ -119,6 +136,7 @@
     max-height: inherit;
     margin-bottom: 40px;
     flex-basis: 100%;
+
     img {
       margin: 0 auto;
       //margin-right: auto;
@@ -126,6 +144,7 @@
       max-height: inherit;
     }
   }
+
   .universal-item-text {
     display: none;
   }
@@ -135,6 +154,7 @@
   .universal-item-img {
     display: none;
   }
+
   .universal-item-text {
     flex-basis: 100%;
     max-width: 780px;
@@ -148,6 +168,7 @@
   .universal-item-img {
     display: none;
   }
+
   .universal-item-text {
     flex-basis: 100%;
     max-width: 780px;
@@ -159,9 +180,11 @@
 
 .universal-slider-item.type-10 {
   flex-direction: column-reverse;
+
   .universal-item-img {
     flex-basis: 100%;
   }
+
   .universal-item-text {
     text-align: center;
     flex-basis: 100%;
@@ -180,4 +203,3 @@
   }
 }
 
-/* univesal types end */
