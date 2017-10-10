@@ -1,30 +1,35 @@
 /* search page start */
-
 .search-p-filters {
   margin-bottom: 20px;
+
   .arrow {
     top: 40%;
     z-index: 1;
     left: calc(100% - 30px);
-    transition: all .4s ease;
-    &:before,
-    &:after {
-      transition: all .4s ease;
+    transition: all 0.4s ease;
+
+    &::before,
+    &::after {
+      transition: all 0.4s ease;
       background-color: #000;
     }
   }
+
   .collapsed .arrow {
-    &:after {
+    &::after {
       top: -5px;
       left: 5px;
     }
   }
+
   .panel-group {
     flex-basis: 200px;
     margin-bottom: 40px;
+
     .panel-default {
       border: none;
       box-shadow: none;
+
       a {
         background-color: #f3f3f3;
         position: relative;
@@ -33,26 +38,31 @@
         font-weight: bold;
         padding-right: 30px;
       }
+
       label {
         width: 100%;
         padding: 5px;
         transition: $link-transition;
+
         &:hover {
           color: $orange;
           font-weight: bold;
         }
       }
+
       .panel-collapse {
         margin-left: 15px;
       }
     }
   }
+
   .search-p-filters-submit {
     flex: 0 1 auto;
     display: flex;
     min-height: 1px;
     align-items: center;
     flex-basis: 100%;
+
     .btn-sbmt {
       background-color: $orange;
       color: #fff;
@@ -63,9 +73,11 @@
       padding: 10px 40px;
       transition: $link-transition;
       outline: none;
+
       &:active {
-        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .5);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5);
       }
+
       &:hover {
         background-color: $dark-orange;
       }
@@ -80,26 +92,32 @@
     min-height: 1px;
     align-items: center;
     justify-content: space-between;
+
     span {
       padding-right: 50px;
     }
+
     .search-p-searchbox {
       width: 100%;
       position: relative;
+
       input {
         width: 100%;
         border: 1px solid #dedede;
         padding: 3px 15px;
         outline: none;
         transition: $link-transition;
+
         &:focus {
           border: 1px solid #000;
+
           & + button {
             border: 1px solid #000;
             border-left: none;
           }
         }
       }
+
       button {
         position: absolute;
         top: 0;
@@ -111,32 +129,39 @@
         color: #fff;
         border-left: none;
         transition: $link-transition;
+
         &:hover {
           color: #000;
         }
+
         &:active {
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .5);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5);
         }
       }
     }
-
   }
+
   .search-p-results {
     margin: 30px 0;
+
     .search-p-result {
       margin-bottom: 40px;
+
       .search-p-result-title {
         padding: 15px 20px;
+
         h3 {
           margin: 0;
         }
       }
+
       .search-p-result-cats {
         ul {
           padding: 0;
           padding-left: 20px;
           margin: 0;
           cursor: default;
+
           li {
             display: inline-block;
             padding: 15px 0;
@@ -144,36 +169,45 @@
             padding-right: 15px;
             color: #bbb;
             font-weight: bold;
-            &:before {
+
+            &::before {
               content: none;
             }
+
             a {
               transition: $link-transition;
+
               &:hover {
                 color: #000;
               }
             }
+
             &.active {
               color: #000;
             }
           }
         }
       }
+
       .search-p-result-content {
         display: block;
+
         .search-p-result-img {
           flex-basis: 33%;
           margin-bottom: 20px;
           text-align: center;
         }
+
         .search-p-result-text {
           flex-basis: 66%;
+
           p {
             margin: 0;
             padding-left: 20px;
           }
         }
       }
+
       .search-p-result-bottom {
         margin-top: 30px;
         margin-left: 20px;
@@ -181,6 +215,7 @@
         display: flex;
         min-height: 1px;
         justify-content: space-between;
+
         .btn-more {
           margin: 0;
           font-size: 16px;
@@ -191,5 +226,3 @@
   }
 }
 
-
-/* search page end */

@@ -1,26 +1,31 @@
 /* triple card start */
-
 .triple {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0;
+
   .triple-header {
     margin-bottom: 40px;
     text-align: center;
   }
+
   .triple-list {
     padding-left: 0;
     margin: 0;
     margin-top: 40px;
     list-style: none;
-    list-style-type: none!important;list-style-position: inside;
+    list-style-type: none !important;
+    list-style-position: inside;
     height: 100%;
+
     li {
-      &:before {
+      flex-basis: 30%;
+
+      &::before {
         content: none;
       }
-      flex-basis: 30%;
+
       .triple-img {
         margin: auto;
         height: 200px;
@@ -28,6 +33,7 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+
       .triple-text {
         margin: auto;
         height: calc(100% - 200px + 1em);
@@ -39,29 +45,34 @@
         justify-content: space-between;
         text-align: center;
         padding: 15px;
+
         h4 {
           margin-top: 0;
           margin-bottom: 10px;
         }
+
         p {
           margin: 0;
           padding-bottom: 20px;
         }
-        >a {
+
+        > a {
           margin: initial;
           display: inline-block;
         }
-        &.triple_has_btn>a {
+
+        &.triple_has_btn > a {
           position: absolute;
           bottom: 25px;
         }
+
         ul > li {
           position: relative;
 
-          &:before {
+          &::before {
             content: '•';
             position: absolute;
-            left: -.75em;
+            left: -0.75em;
             font-size: 1.2em;
           }
         }
@@ -70,5 +81,3 @@
   }
 }
 
-
-/* triple card end */

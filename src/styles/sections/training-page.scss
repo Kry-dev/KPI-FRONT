@@ -1,51 +1,64 @@
 /* training page start */
-
 .training {
+
   .training-main {
     display: block;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
     .training-main-left {
       flex-basis: 60%;
+
       p {
         margin-bottom: 20px;
       }
+
       .training-main-l-when {
+
         > div {
           margin-bottom: 20px;
+
           p {
             margin-bottom: 0;
           }
         }
       }
     }
+
     .training-main-right {
       flex-basis: 30%;
+
       .training-enroll-wrapper {
         margin: 20px;
         border: 1px solid #f2f2f2;
+
         .training-enroll-title {
           margin: 0;
           padding: 15px;
           background: #0e7fb9;
           color: #fff;
         }
+
         > p {
           margin-bottom: 15px;
           font-size: 22px;
           padding: 15px;
         }
+
         form {
           padding: 15px;
+
           input {
             width: 100%;
             outline: none;
             border-radius: 0;
             margin-bottom: 30px;
           }
+
           .training-enroll-send-btn {
             text-align: right;
+
             button {
               font-size: 12px;
               padding: 10px 40px;
@@ -55,6 +68,7 @@
               transition: $link-transition;
               outline: none;
               text-transform: uppercase;
+
               &:hover {
                 background-color: $dark-orange;
               }
@@ -64,23 +78,29 @@
       }
     }
   }
+
   .training-detail-r-tabs {
     margin: 40px 0;
     max-width: 600px;
+
     ul {
+
       li {
-        padding-bottom: 0px;
+        padding-bottom: 0;
         margin: 0;
         margin-bottom: -1px;
-        &:before {
+
+        &::before {
           content: none;
         }
+
         a {
           border-radius: 0;
           &:hover {
             font-weight: 400;
           }
         }
+
         &.active {
           a {
             background-color: #f2f2f2;
@@ -89,6 +109,7 @@
         }
       }
     }
+
     .tab-content {
       border: 1px solid #d2d2d2;
       border-top: 0;
@@ -97,4 +118,3 @@
     }
   }
 }
-/* training page end */
