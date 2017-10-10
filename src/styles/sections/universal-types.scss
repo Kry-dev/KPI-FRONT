@@ -1,0 +1,183 @@
+/* univesal types start */
+
+.universal-slider-item.type-1 {
+  .universal-item-img {
+    max-width: 100%;
+    margin: auto;
+    flex-shrink: 0;
+  }
+  .universal-item-text {
+    display: none;
+  }
+}
+
+.universal-slider-item.type-2 {
+  .universal-item-img {
+    display: none;
+  }
+  .universal-item-text {
+    flex-basis: 100%;
+    max-width: 780px;
+    margin: auto;
+    padding: 0 15px;
+  }
+}
+
+.type-3 {
+  flex-direction: column;
+  .universal-item-img {
+    padding: 0px;
+    img {
+      width: 100%;
+    }
+  }
+  .universal-item-text {
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+.type-4 {
+  flex-direction: column;
+  .universal-item-img {
+    padding: 0px;
+    margin-bottom: 40px;
+  }
+  .universal-item-text {
+    text-align: center;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.type-11 {
+  flex-direction: column;
+  .universal-item-img {
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  .universal-item-text {
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+.type-12 {
+  flex-direction: column;
+  .universal-item-img {
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  .universal-item-text {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.type-5 {
+  flex-direction: column;
+  .universal-item-img {
+    margin-bottom: 40px;
+    flex-basis: 100%;
+  }
+  .universal-item-text {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+.universal-slider-item.type-5 {
+  display: block;
+  .universal-item-img {
+    max-width: 45%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.universal-slider-item.type-6 {
+  .universal-item-img {
+    max-height: inherit;
+    margin-bottom: 40px;
+    flex-basis: 100%;
+    img {
+      margin: 0 auto;
+      //margin-right: auto;
+      //width: 100%;
+      max-height: inherit;
+    }
+  }
+  .universal-item-text {
+    display: none;
+  }
+}
+
+.universal-slider-item.type-7 {
+  .universal-item-img {
+    max-height: inherit;
+    margin-bottom: 40px;
+    flex-basis: 100%;
+    img {
+      margin: 0 auto;
+      //margin-right: auto;
+      //width: 100%;
+      max-height: inherit;
+    }
+  }
+  .universal-item-text {
+    display: none;
+  }
+}
+
+.universal-slider-item.type-8 {
+  .universal-item-img {
+    display: none;
+  }
+  .universal-item-text {
+    flex-basis: 100%;
+    max-width: 780px;
+    padding: 0 15px;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+
+.universal-slider-item.type-9 {
+  .universal-item-img {
+    display: none;
+  }
+  .universal-item-text {
+    flex-basis: 100%;
+    max-width: 780px;
+    padding: 0 15px;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.universal-slider-item.type-10 {
+  flex-direction: column-reverse;
+  .universal-item-img {
+    flex-basis: 100%;
+  }
+  .universal-item-text {
+    text-align: center;
+    flex-basis: 100%;
+    max-width: 780px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+}
+
+.universal {
+  .universal-item-img {
+    img {
+      width: 65%;
+    }
+  }
+}
+
+/* univesal types end */

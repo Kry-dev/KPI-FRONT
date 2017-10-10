@@ -5,8 +5,13 @@ html
         <!--[if lt IE 7]>
         <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
         <![endif]-->
-        
+        include common/_index-header
 
-        .wrapper
-            include common/_main
-                h1 Gulp builder
+        <!-- page content start -->
+        section.content
+            include sections/_icon-card
+            include sections/_blog-card
+        <!--  container start -->
+
+        include common/_footer
+        include common/_scripts

@@ -1,0 +1,16 @@
+/* admin panel start */
+
+.mfp-iframe-holder .mfp-content {
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  max-width: initial;
+  position: absolute;
+  width: auto;
+  max-width: 800px!important;
+  .mfp-iframe-scaler {
+    padding: 0;
+  }
+}
+/* admin panel end */

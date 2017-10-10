@@ -1,0 +1,87 @@
+/* careers card start */
+.careers {
+  padding: 40px 0;
+  max-width: 1280px;
+  margin: auto;
+  font-family: 'Helvetica Neue',Arial, sans-serif;
+  color: #fff
+}
+
+.careers a {
+  text-decoration: none;
+  color: #fff
+}
+
+.careers .title {
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  text-align: center
+}
+
+.careers .title h1 {
+  font-size: 36px;
+  margin-top: 0
+}
+
+.careers .title p {
+  font-size: 16px;
+  line-height: 32px
+}
+.careers .title > div a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+}
+.careers .title > div a:hover {
+  text-decoration: none;
+}
+
+.careers .services-list {
+  margin-top: 40px;
+}
+
+.careers .services-list h2 {
+  font-size: 24px;
+  padding-left: 40px
+}
+
+.careers .services-list .services-list-items {
+  padding-left: 0;
+  margin: auto;
+}
+
+.careers .services-list .services-list-items .services-list_item {
+  min-height: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  flex: 0 1 auto;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #227388;
+  margin-bottom: 8px;
+}
+
+.careers .services-list .services-list-items .services-list_item:before {
+  content: none;
+}
+
+.careers .services-list .services-list-items .services-list_item .services-list-item-left {
+  padding-left: 40px
+}
+
+.careers .services-list .services-list-items .services-list_item .services-list-item-left i,
+.careers .services-list .services-list-items .services-list_item .services-list-item-right {
+  padding-right: 25px
+}
+
+/* careers card end */
+/*Careers card - Some bullets:*/
+.container_of_card .card11 .services_list .services_list_items .services_list_item:before {
+  display: none;
+}

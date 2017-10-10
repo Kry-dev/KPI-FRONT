@@ -1,3 +1,33 @@
-h1 {
-  color: red;
-}
+//default
+@import "common/variables.scss";
+@import "common/layout.scss";
+@import "common/fonts.scss";
+@import "common/buttons.scss";
+@import "common/header.scss";
+@import "common/footer.scss";
+@import "common/mixin.scss";
+
+//common
+@import "common/slick-slider.scss";
+@import "common/menu-custom-scroll.scss";
+@import "common/animate-text.scss";
+@import "common/slide-menu.scss";
+@import "common/media-queries.scss";
+
+
+//pages
+@import "sections/blog-page.scss";
+@import "sections/search-page.scss";
+@import "sections/contact-us-page.scss";
+
+//sections
+@import "sections/anchors-card.scss";
+@import "sections/dropdown-card.scss";
+@import "sections/triple-card.scss";
+@import "sections/video.scss";
+@import "sections/universal-types.scss";
+@import "sections/universal.scss";
+@import "sections/universal-hero.scss";
+@import "sections/masonry.scss";
+@import "sections/icons-card.scss";
+@import "sections/blog-card.scss";

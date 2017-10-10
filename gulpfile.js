@@ -58,18 +58,18 @@ gulp.task('css', function () {
         .pipe(postcss())
         .pipe(csso())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./build/assets/styles'))
+        .pipe(gulp.dest('./build/styles'))
         .pipe(browserSync.stream());
 });
 //------------------------------------------ copy img --------------------------------//
 gulp.task('copy.image', function() {
     return gulp.src('./src/images/**/*.*', {since: gulp.lastRun('copy.image')})
-      .pipe(gulp.dest('./build//assets/img'));
+      .pipe(gulp.dest('./build/img'));
 });
 //------------------------------------------ copy fonts --------------------------------//
 gulp.task('copy.fonts', function() {
     return gulp.src('./src/fonts/**/*.*', {since: gulp.lastRun('copy.fonts')})
-      .pipe(gulp.dest('./build//assets/fonts'));
+      .pipe(gulp.dest('./build/fonts'));
 });     
 
 //---------------------------------------- watch ---------------------------------------//

@@ -1,0 +1,265 @@
+/* event detail start */
+
+.event-detail {
+  .event-detail-left {
+    p {
+      img {
+        float: left;
+        padding: 0 10px 10px 0;
+      }
+    }
+    .event-detail-left-h {
+      padding-top: 10px;
+      padding-bottom: 50px;
+      h2 {
+        line-height: 1.4em;
+        margin: 0;
+      }
+    }
+    .event-detail-left-img {
+      float: left;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      padding-top: 0;
+
+      img {
+        width: 192px;
+        height: 192px;
+      }
+    }
+    h3 {
+      color: #5d5d5d;
+      margin-top: 0;
+      line-height: 1.4;
+    }
+    .event-detail-l-list {
+      ul {
+        li {
+          &:before {
+            color: #007eaf;
+          }
+        }
+      }
+    }
+    a {
+      color: #007eaf;
+      font-weight: bold;
+    }
+  }
+  .event-detail-right {
+    .event-detail-r-tabs {
+      ul {
+        border-bottom: none;
+        flex: 0 1 auto;
+        display: flex;
+        min-height: 1px;
+        li {
+          flex-basis: 50%;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          &:before {
+            content: none;
+          }
+          a {
+            height: 100%;
+            align-items: center;
+            flex: 0 1 auto;
+            display: flex;
+            min-height: 1px;
+            text-transform: uppercase;
+            padding: 10px;
+            border: none;
+            border-radius: 0;
+            text-align: center;
+            display: block;
+          }
+        }
+        .detail-tab {
+          color: #fff;
+          &.active {
+            a {
+              color: #fff;
+            }
+          }
+          a {
+            background-color: #036686;
+            margin: 0;
+            > i {
+              font-size: 20px;
+              padding-right: 5px;
+              background-color: inherit;
+              > i {
+                position: relative;
+                top: 7px;
+                left: -8px;
+                font-size: 15px;
+                background-color: inherit;
+              }
+            }
+          }
+        }
+        .agenda-tab {
+          color: #000;
+          a {
+            background-color: #f2f2f2;
+            margin-right: 0;
+            &:hover {}
+            i {
+              padding-right: 15px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .tab-content {
+        >div {
+          padding: 60px 70px 90px 50px;
+        }
+        #details {
+          background-color: #036686;
+          color: #fff;
+          .details-tab-content {
+            .details-tab-content-date,
+            .details-tab-content-location,
+            .details-tab-content-address,
+            .details-tab-content-time{
+              flex: 0 1 auto;
+              display: flex;
+              min-height: 1px;
+              flex-direction: row;
+
+              p {
+                margin: 0px;
+                margin-bottom: 30px;
+              }
+
+              i {
+                padding-top: 5px;
+                font-size: 18px;
+                padding-right: 15px;
+                min-width: 38px;
+                display: inline-block;
+                text-align: center;
+              }
+            }
+            .details-tab-content-address {
+              padding-right: 25px;
+            }
+            p {
+              margin-bottom: 30px;
+              i {
+                font-size: 18px;
+                padding-right: 20px;
+              }
+            }
+            .details-tab-c-remind {
+              flex: 0 1 auto;
+              display: flex;
+              min-height: 1px;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 55px;
+              height: 38px;
+              overflow: hidden;
+              .details-tab-c-ics {
+                line-height: 1em;
+                a {
+                  white-space: nowrap;
+                  background-color: #043756;
+                  flex: 0 1 auto;
+                  display: flex;
+                  min-height: 1px;
+                  align-items: center;
+                  height: 100%;
+                  font-size: 16px;
+                  transition: $link-transition;
+                  i {
+                    font-size: 18px;
+                    height: 100%;
+                    line-height: 38px;
+                    background-color: #0e7fb9;
+                    padding: 0 15px;
+                  ;
+                  }
+                  span {
+                    padding: 0px 20px;
+                  }
+                }
+              }
+              .details-tab-c-calendar {
+                flex-shrink: 0;
+              }
+              > span {
+                padding: 0 20px;
+              }
+            }
+            .details-tab-c-register {
+              text-transform: uppercase;
+              flex: 0 1 auto;
+              display: flex;
+              min-height: 1px;
+              a {
+                flex: 0 1 auto;
+                display: flex;
+                min-height: 1px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                font-size: 16px;
+                padding: 10px 40px;
+                background-color: $orange;
+                transition: $link-transition;
+                &:hover {
+                  background-color: $dark-orange;
+                  color: #fff;
+                  font-weight: normal;
+                }
+                i {
+                  font-size: 18px;
+                  padding-right: 20px;
+                }
+              }
+            }
+          }
+        }
+        #agenda {
+          background-color: #f2f2f2;
+          color: #000;
+          .agenda-tab-content {
+            ul {
+              display: block;
+              padding-left: 0px;
+              li {
+                flex: 0 1 auto;
+                display: flex;
+                min-height: 1px;
+                flex-direction: row;
+                i {
+                  font-size: 18px;
+                  padding-right: 20px;
+                  padding-top: 2px;
+                }
+                .agenda-tab-c-time {
+                  padding-right: 20px;
+                  white-space: nowrap;
+                  color: #007eb1;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .event-detail-r-map {
+      iframe {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+}
+
+
+/* event detail end */

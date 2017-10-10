@@ -1,4 +1,27 @@
+// import MagnificPopup from 'http://kpidigital.com/vendor/magnific-popup/magnific-popup.js';
+import {fixedHeaderScroll} from './common/_fixedHeaderScroll';
+import {hamburger} from './common/_hamburger';
+import {slideMenu} from './common/_slideMenu';
+import {iconsCard} from './common/_iconsCard';
+import {iconCardSlider} from './common/_iconCardSlider';
+import {solutionsCardSlider} from './common/_solutionsCardSlider';
+import {knowledgeCardSlider} from './common/_knowledgeCardSlider';
+import {universalCardSlider} from './common/_universalCardSlider';
+import {searchBoxMobile} from './common/_searchBoxMobile';
+import {eventsSearchForm} from './common/_eventsSearchForm';
+import {masonryPopupVideo} from './common/_masonryPopupVideo';
 
-console.log('start app');
-
+$(document).ready(function() {
+  fixedHeaderScroll();
+  hamburger();
+  slideMenu();
+  iconsCard();
+  iconCardSlider();
+  solutionsCardSlider();
+  knowledgeCardSlider();
+  universalCardSlider();
+  searchBoxMobile();
+  eventsSearchForm();
+  masonryPopupVideo();
+});
 

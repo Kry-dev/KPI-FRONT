@@ -1,0 +1,121 @@
+/* blog page start */
+
+.blog-item {
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  .blog-item-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    h2 {
+      margin: 0;
+      padding-bottom: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .blog-item-title-desc {
+      .blog-item-title-desc-date,
+      .blog-item-title-desc-author,
+      .blog-item-title-desc-comments {
+        display: inline-block;
+        margin: 0;
+        font-size: 12px;
+        color: #9d9d9d;
+        text-align: left;
+        text-transform: uppercase;
+        padding-right: 30px;
+        i {
+          padding-right: 5px;
+        }
+      }
+      .blog-item-title-desc-author,
+      .blog-item-title-desc-comments {
+        transition: $link-transition;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+  .blog-content {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 1.6em;
+    p {
+      > img {
+        width: 300px!important;
+        margin: 0 20px 20px 0;
+      }
+    }
+    br {
+      content: " ";
+      display: block;
+      height: 15px;
+    }
+  }
+  .blog-tags {
+    margin: 20px 0;
+    a {
+      transition: $link-transition;
+      &:hover {
+        color: $orange;
+        text-decoration: none;
+      }
+    }
+    ul {
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding-right: 20px;
+        &:before {
+          content: none;
+        }
+        &:last-child {
+          padding-right: 0px;
+        }
+        a {
+          i {
+            padding-right: 7px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.blog-wrapper {
+  align-items: flex-start;
+  .blogs-categories {
+    padding: 20px 30px 30px 30px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    ul {
+      li {
+        &.active {
+          span,
+          a {
+            background-color: #0c1429;
+            color: #fff;
+            border-radius: 5px;
+          }
+        }
+        > span,
+        > a {
+          padding: 10px;
+        }
+        > a {
+          transition: $link-transition;
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* blog page end */

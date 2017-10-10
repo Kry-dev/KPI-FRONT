@@ -11,13 +11,13 @@ module.exports = {
   },
   output: {
     //publicPath: '',        
-    filename: 'assets/scripts/[name].bundle.js',
+    filename: 'scripts/[name].bundle.js',
     path: __dirname + "./build"    
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: "common",
-      filename: "assets/scripts/common.js",
+      filename: "scripts/common.js",
       minChunks: 2
     }),
     new webpack.ProvidePlugin({
