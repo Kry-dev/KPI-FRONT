@@ -1,4 +1,5 @@
-// import MagnificPopup from 'http://kpidigital.com/vendor/magnific-popup/magnific-popup.js';
+require('../../node_modules/magnific-popup/dist/jquery.magnific-popup.min.js');
+
 import {fixedHeaderScroll} from './common/_fixedHeaderScroll';
 import {hamburger} from './common/_hamburger';
 import {slideMenu} from './common/_slideMenu';
