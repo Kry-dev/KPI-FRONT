@@ -1,46 +1,55 @@
 /* anchors card start */
-
 .anchors {
   display: block;
-  ul > li:before {
+
+  ul > li::before {
     content: none;
   }
+
   .anchors-first {
     flex-basis: 70%;
+
     .anchors-content {
       ul {
         list-style: none;
-        list-style-type: none!important;
+        list-style-type: none !important;
         list-style-position: inside;
+
         li {
-          &:before {
+          &::before {
             content: none;
           }
         }
       }
     }
   }
+
   .anchors-second {
     flex-basis: 30%;
+
     .anchors-content {
       ul {
         display: block;
         list-style: none;
-        list-style-type: none!important;
+        list-style-type: none !important;
         list-style-position: inside;
+
         li {
-          &:before {
-            content: none;
-          }
           display: block;
           width: 100%;
           padding: 15px 25px;
+
+          &::before {
+            content: none;
+          }
         }
       }
     }
   }
+
   .anchors-content {
     padding: 40px 0;
+
     ul {
       margin: 0;
       flex: 0 1 auto;
@@ -49,24 +58,29 @@
       flex-direction: row;
       flex-wrap: wrap;
       width: 100%;
-      padding: 0px;
+      padding: 0;
+
       li {
         text-align: left;
         flex-basis: 170px;
         padding: 25px;
         white-space: nowrap;
+
         a {
           text-decoration: none;
+
           i {
             vertical-align: top;
             padding-top: 2px;
             padding-right: 5px;
           }
+
           span {
             white-space: normal;
             display: inline-block;
           }
         }
+
         a:hover {
           span {
             text-decoration: underline;
@@ -76,6 +90,3 @@
     }
   }
 }
-
-
-/* anchors card end */

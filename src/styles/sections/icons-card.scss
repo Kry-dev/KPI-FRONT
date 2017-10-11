@@ -1,28 +1,32 @@
-.icons-card{
+.icons-card {
   display: block;
 
-  .icons-card--header{
+  .icons-card--header {
     text-align: center;
     display: block;
-    padding:0 0 40px;
+    padding: 0 0 40px;
+
     .icons-card--title,
-    .icons-card--text{
+    .icons-card--text {
       display: block;
       text-align: center;
     }
   }
 }
-.icons-card-item{
+
+.icons-card-item {
   display: block;
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  .icons-card--icon{
+
+  .icons-card--icon {
     display: block;
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
-    .icon-btn{
+
+    .icon-btn {
       display: block;
       padding-top: 0;
       padding-bottom: 0;
@@ -37,7 +41,8 @@
       -ms-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease;
-      .fa{
+
+      .fa {
         text-align: center;
         font-size: 40px;
         line-height: 40px;
@@ -50,7 +55,8 @@
         margin-left: -20%;
       }
     }
-    .icon-btn.icon-circle{
+
+    .icon-btn.icon-circle {
       width: 100px;
       height: 100px;
       left: 50%;
@@ -58,11 +64,12 @@
       margin: 40px auto 0 -50px;
       padding-top: 20px;
       padding-bottom: 20px;
-      &:after{
-        content:"";
+
+      &::after {
+        content: "";
         display: block;
         position: absolute;
-        background: #ffffff;
+        background: #fff;
         top: 0;
         width: 100%;
         height: 100%;
@@ -71,28 +78,31 @@
         text-align: center;
         z-index: 10;
       }
-      &:focus{
+
+      &:focus {
         outline: 0;
       }
     }
   }
 
-  .icons-card--item-title{
+  .icons-card--item-title {
     font-size: 20px;
     text-align: center;
     color: inherit;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
     padding: 0;
     font-weight: 400;
   }
-  .icons-card--item-desc{
+
+  .icons-card--item-desc {
     text-align: center;
     color: #2e2e2e;
     display: none;
     font-size: 14px;
     line-height: 24px;
   }
-  .icons-card--learn-btn{
+
+  .icons-card--learn-btn {
     display: block;
     background: #28bbf8;
     color: #fff;
@@ -102,92 +112,101 @@
     letter-spacing: 2px;
     margin-bottom: 20px;
     border-radius: 2px;
-    &:hover{
+
+    &:hover {
       background: #282e3c;
-      color: #ffffff;
+      color: #fff;
       box-shadow: none;
       outline: none !important;
       border-color: transparent;
     }
-    &:hover + .icon-btn.icon-circle:hover{
+
+    &:hover + .icon-btn.icon-circle:hover {
       margin-top: -20px;
       margin-bottom: 20px;
-      &:after {
+
+      &::after {
         background: #28bbf8;
       }
-      .fa{
-        color: #ffffff;
+
+      .fa {
+        color: #fff;
       }
     }
   }
 }
-.icons-card-item:hover{
+
+.icons-card-item:hover {
   .icon-btn.icon-circle {
     margin-top: -10px;
     margin-bottom: 50px;
-    &:after {
+
+    &::after {
       background: #28bbf8;
     }
-    .fa{
-      color: #ffffff;
+
+    .fa {
+      color: #fff;
     }
   }
 }
-#icons-card.card-items3{
-  ul{
-    //padding: 0 !important;
-  }
-  ul > li{
+
+#icons-card.card-items3 {
+  ul > li {
     width: 31% !important;
     display: inline-block;
     margin: 0 0.7% 30px;
     vertical-align: top;
-    &:before{
+
+    &::before {
       display: none;
     }
-    .btn{
+
+    .btn {
       max-width: 220px;
       margin: 0 auto;
     }
   }
 }
-#icons-card.card-items4{
-  ul{
-    //padding: 0 !important;
-  }
-  ul > li{
+
+#icons-card.card-items4 {
+  ul > li {
     vertical-align: top;
     width: 24% !important;
     display: inline-block;
     margin-bottom: 30px;
-    &:before{
+
+    &::before {
       display: none;
     }
-    .btn{
+
+    .btn {
       max-width: 220px;
       margin: 0 auto;
     }
   }
 }
-#icons-card.card-items6{
-  ul{
-    //padding: 0 !important;
-  }
-  ul > li{
+
+#icons-card.card-items6 {
+  ul > li {
     vertical-align: top;
     width: 15% !important;
     display: inline-block;
     margin: 0 0.5% 30px;
-    &:first-child{
+
+    &:first-child {
       margin-left: 0;
     }
-    &:last-child{
+
+    &:last-child {
       margin-right: 0;
     }
-    &:before{
+
+    &::before {
       display: none;
     }
-    .btn{
+
+    .btn {
       max-width: 220px;
       margin: 0 auto;
     }

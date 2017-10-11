@@ -2,33 +2,40 @@
 .slick-dotted.slick-slider {
   overflow: hidden;
 }
+
 .slick-dotted.slick-slider body {
   overflow: auto;
 }
+
 .solutions {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px;
+
   .solutions-header {
     max-width: 830px;
     padding: 0 15px;
     margin: auto;
     margin-bottom: 40px;
     text-align: center;
+
     .solutions-header-title {
       font-weight: bold;
       font-size: 40px;
       margin: 0;
       margin-bottom: 20px;
     }
+
     .solutions-header-text {
       font-size: 18px;
       margin: 0;
     }
   }
+
   .solutions-slider-wrapper {
     margin-top: 40px;
+
     .solutions-slider {
       .solutions-item {
         .solutions-item-img {
@@ -38,9 +45,11 @@
           margin: auto;
           margin-bottom: 25px;
           position: relative;
+
           a {
             height: 140px;
             display: block;
+
             img {
               position: absolute;
               left: 50%;
@@ -48,6 +57,7 @@
             }
           }
         }
+
         .solutions-item-title {
           font-size: 20px;
           font-weight: bold;
@@ -55,6 +65,7 @@
           cursor: default;
           text-align: center;
         }
+
         .solutions-item-desc {
           font-size: 14px;
           cursor: default;
@@ -62,10 +73,10 @@
           ul li {
             position: relative;
 
-            &:before {
+            &::before {
               content: '•';
               position: absolute;
-              left: -.75em;
+              left: -0.75em;
               font-size: 1.2em;
             }
           }
@@ -74,6 +85,3 @@
     }
   }
 }
-
-
-/* solutions sections end */

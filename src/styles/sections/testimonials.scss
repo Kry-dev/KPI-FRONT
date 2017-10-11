@@ -1,34 +1,39 @@
 /* testimonials card start */
-
 .testimonials {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0;
+
   .testimonials-header {
     max-width: 1000px;
     padding: 0 15px;
     margin: auto;
     margin-bottom: 40px;
     text-align: center;
+
     .testimonials-header-title {
       font-weight: bold;
       font-size: 40px;
       margin: 0 0 20px;
     }
+
     .testimonials-header-text {
       line-height: 1.6em;
       font-size: 18px;
       margin: 0;
     }
   }
+
   .testimonials-slider {
     margin-bottom: 0;
     margin-top: 40px;
+
     .slick-track {
       flex: 0 1 auto;
       display: flex;
       min-height: 1px;
+
       .slick-slide {
         flex: 0 1 auto;
         display: flex;
@@ -36,10 +41,12 @@
         height: auto;
       }
     }
+
     .testimonials-item {
       padding: 35px 25px;
-      background-color: #FFF;
+      background-color: #fff;
       width: 100%;
+
       .testimonials-item-img {
         max-width: 185px;
         width: 185px;
@@ -49,31 +56,38 @@
         background-size: cover;
         background-position: center center;
       }
+
       .testimonials-item-text {
         padding-bottom: 10px;
         text-align: center;
+
         .testimonials-item-name {
           font-weight: 500;
           font-size: 18px;
           padding-bottom: 10px;
         }
+
         .testimonials-item-desc {
           line-height: 1.6em;
           min-height: 120px;
           padding-bottom: 20px;
         }
+
         .testimonials-item-icons {
           font-size: 24px;
+
           a {
             display: inline-block;
             padding: 5px 8px;
             border-radius: 4px;
             text-decoration: none;
             transition: $link-transition;
+
             &:hover {
               text-decoration: none;
               background-color: #eee;
             }
+
             &:not(:last-child) {
               margin-right: 20px;
             }
@@ -83,6 +97,3 @@
     }
   }
 }
-
-
-/* testimonials card end */

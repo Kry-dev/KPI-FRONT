@@ -1,16 +1,20 @@
-#btn-slide-box{
+#btn-slide-box {
   margin-right: -45px;
   padding-left: 35px;
-  .btn-slide{
+
+  .btn-slide {
     display: block;
   }
 }
-#openSearchMobile{
+
+#openSearchMobile {
   display: none;
 }
-.search-box-mobile{
+
+.search-box-mobile {
   display: none;
 }
+
 .right-slide-menu {
   background: #fff;
   border-left: 1px solid #777677;
@@ -22,25 +26,29 @@
   top: 0;
   -webkit-transform: translate3d(100%, 0px, 0px);
   transform: translate3d(100%, 0px, 0px);
-  -webkit-transition: all .5s cubic-bezier(0.2, 1, 0.2, 1);
-  transition: all .5s cubic-bezier(0.2, 1, 0.2, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.2, 1, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.2, 1);
   width: 380px;
   z-index: 1005;
 
   ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 15px 0;
+    margin: 0 0 15px;
     border-top: 2px solid #5a5a5a;
+
     &:first-child {
       margin: 0;
     }
+
     li {
       padding: 0;
       position: relative;
-      &:before {
+
+      &::before {
         display: none;
       }
+
       a {
         padding: 10px 20px;
         color: #323232;
@@ -48,15 +56,19 @@
         position: relative;
         transition: none;
         text-decoration: none;
-        &:hover, &:focus, .accordion-active {
+
+        &:hover,
+        &:focus,
+        .accordion-active {
           color: #fff;
           background-color: #3b6caa;
         }
       }
-
     }
+
     .accordion {
       position: relative;
+
       .fa {
         position: absolute;
         display: block;
@@ -66,8 +78,9 @@
         right: 10px;
       }
     }
+
     .accordion.accordion-active {
-      .fa-plus:before {
+      .fa-plus::before {
         content: "\f068";
       }
     }
@@ -77,49 +90,57 @@
       border: none;
       padding-left: 10px;
       font-size: 16px;
+
       li {
-        a
-        span {
+        a span {
           border-bottom: 4px solid transparent;
           padding-bottom: 5px;
         }
-        a:hover, a:focus {
+
+        a:hover,
+        a:focus {
           color: #000;
           background-color: transparent;
+
           span {
             border-bottom: 4px solid #323232;
           }
         }
       }
     }
+
     .btn-slide-close {
       display: block;
       width: 100%;
       padding: 19px 20px;
       min-height: 40px;
       font-size: 24px;
+
       .fa {
         text-align: right;
         display: block;
-
       }
-      &:hover{
-        cursor: focus;
+
+      &:hover {
+        cursor: pointer;
         background-color: #fff;
         color: #323232;
       }
     }
   }
-  .profile-link-box{
+
+  .profile-link-box {
     display: none;
   }
 }
-.right-slide-menu.slide-show{
-  -webkit-transform: translate3d(0px,0px,0px);
-  transform: translate3d(0px,0px,0px);
+
+.right-slide-menu.slide-show {
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
-.header-wrapper.overlay-dark{
-  background: rgba(0,0,0,0.5) 0 0;
+
+.header-wrapper.overlay-dark {
+  background: rgba(0, 0, 0, 0.5) 0 0;
   display: block;
   height: 100%;
   left: 0;
@@ -129,25 +150,31 @@
   z-index: 900;
   will-change: transform;
 }
+
 .accordion-content {
   .inner-accordion-box {
     border: none;
     font-size: 16px;
+
     .inner-accordion-content {
       display: none;
       list-style: none;
       border: none;
       margin: 0;
       padding-left: 25px;
-      a:hover, a:focus {
+
+      a:hover,
+      a:focus {
         color: #3b6caa;
         background-color: transparent;
+
         span {
           border-bottom: none;
         }
       }
     }
   }
+
   .fa {
     position: absolute;
     display: block;
@@ -156,9 +183,10 @@
     top: 10px;
     right: 10px;
   }
+
   .inner-accordion-box {
     .accordion-active {
-      .fa-plus:before {
+      .fa-plus::before {
         content: "\f068" !important;
       }
     }

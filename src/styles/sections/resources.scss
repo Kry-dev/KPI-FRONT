@@ -1,52 +1,64 @@
 /* resources card start */
-
 .resources {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0;
+
   .resources-header {
     max-width: 1000px;
     padding: 0 15px;
     margin: auto;
     margin-bottom: 40px;
     text-align: center;
+
     .resources-header-title {
       font-weight: bold;
       font-size: 40px;
       margin: 0 0 20px;
     }
+
     .resources-header-text {
       line-height: 1.6em;
       font-size: 18px;
       margin: 0;
     }
   }
+
   .resources-content {
     font-size: 16px;
     max-width: 1000px;
     padding: 0 15px;
     margin: auto;
     margin-top: 40px;
+
     ul {
-      list-style: none;             list-style-type: none!important;list-style-position: inside;
+      list-style: none;
+      list-style-type: none !important;
+      list-style-position: inside;
       padding: 0;
+
       li {
-        &:before {
+        padding-bottom: 40px;
+
+        &::before {
           content: none;
         }
-        padding-bottom: 40px;
+
         .resources-item-header {
           padding-bottom: 10px;
+
           a {
             text-decoration: none;
             transition: $link-transition;
+
             i {
               color: inherit;
               padding-right: 15px;
             }
           }
         }
+
         .resources-item-desc {
           line-height: 1.6em;
         }
@@ -55,5 +67,3 @@
   }
 }
 
-
-/* resources card end */

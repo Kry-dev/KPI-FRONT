@@ -1,12 +1,11 @@
 /* footer start */
-
 footer {
   background-color: $second-color;
   color: #fff;
   font-size: 14px;
 
   ul > li {
-    &:before {
+    &::before {
       content: none;
     }
   }
@@ -23,6 +22,7 @@ footer {
 
     .content-discuss {
       text-align: center;
+
       h2 {
         padding-bottom: 15px;
         margin: 0;
@@ -35,17 +35,18 @@ footer {
       }
     }
   }
+
   .footer-content-wrapper {
-    flex: 0 1 auto;
     display: flex;
-    min-height: 1px;
     flex-direction: column;
     min-height: 1px;
     flex: 0 1 auto;
+
     .logo_partner {
       max-width: 246px;
       margin-bottom: 20px;
     }
+
     .footer-row{
       flex: 0 1 auto;
       display: flex;
@@ -54,12 +55,13 @@ footer {
       justify-content: space-between;
       padding-top: 40px;
       flex-wrap: wrap;
+
       > div {
         flex: 0 1 auto;
-
         flex-basis: 100%;
         text-align: left;
       }
+
       .footer-logos {
         flex: 0 1 auto;
 
@@ -80,6 +82,7 @@ footer {
             }
           }
         }
+
         img {
           max-width: 110px;
         }
@@ -88,19 +91,23 @@ footer {
 
     .footer-list {
       flex: 0 1 auto;
-
       flex-basis: 20%;
+
       ul {
         padding-left: 0;
+
         li {
           padding-bottom: 1pt;
+
           &:first-child {
             font-size: 16px;
             padding-bottom: 5px;
             font-weight: bold;
           }
+
           a {
             transition: $link-transition;
+
             &:hover {
               color: $orange;
             }
@@ -116,35 +123,42 @@ footer {
       padding-bottom: 40px;
       justify-content: space-between;
       flex-wrap: wrap;
+
       .footer-social {
         flex-basis: 100%;
+
         ul {
           flex: 0 1 auto;
           display: flex;
           min-height: 1px;
           flex-direction: row;
           flex-wrap: wrap;
-          padding-left: 0px;
+          padding-left: 0;
+
           li {
             display: inline-block;
+
             &:first-child {
               font-size: 16px;
-              padding-bottom: 0px;
+              padding-bottom: 0;
               margin-bottom: 20px;
               display: block;
               flex-basis: 100%;
               text-align: left;
               text-transform: uppercase;
             }
+
             a {
               transition: $link-transition;
               &:hover {
                 color: $orange;
+
                 i {
                   color: inherit;
                   font-weight: normal;
                 }
               }
+
               i {
                 transition: $link-transition;
                 color: #000;
@@ -162,19 +176,21 @@ footer {
           }
         }
       }
+
       .footer-mail-form {
         flex: 0 1 auto;
-
         flex-basis: 100%;
         text-align: center;
+
         p {
-          padding: 0px;
+          padding: 0;
           color: #fff;
           font-size: 16px;
           text-align: left;
           text-transform: uppercase;
           margin-bottom: 20px;
         }
+
         form {
           flex: 0 1 auto;
           display: flex;
@@ -182,11 +198,13 @@ footer {
           flex-direction: row;
           align-items: center;
           height: 37px;
+
           input[type="email"] {
             border-radius: 0;
             margin-right: 40px;
             height: 100%;
           }
+
           button {
             border: none;
             background-color: $orange;
@@ -203,14 +221,15 @@ footer {
       }
     }
   }
+
   .footer-copy {
     text-align: center;
     padding: 20px 0;
   }
 }
+
 .kpi_signup_frame {
   width: 100%;
   min-height: 235px;
   margin-top: -46px;
 }
-/* footer end */

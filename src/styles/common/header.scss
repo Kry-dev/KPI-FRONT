@@ -8,15 +8,18 @@ header {
   -o-transition: top 0.2s ease-in-out;
   -ms-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
+
   &.not-fixed-header{
     top: 0;
     left: 0;
   }
+
   &.fixed-header{
     top: -70px;
     left: 0;
 
   }
+
   .header-wrapper {
     .header-top {
       text-align: center;
@@ -27,9 +30,11 @@ header {
       padding: 0 15px;
       font-size: 18px;
       align-items: center;
+
       a {
         text-decoration: none;
       }
+
       .header-top-l{
         margin: 0;
         padding: 0;
@@ -40,22 +45,26 @@ header {
         align-items: center;
         flex-wrap: wrap;
         justify-content: flex-start;
+
         .header-logo{
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           align-items:center;
+
           img{
             display: none;
             max-width: 60px;
           }
         }
+
         .header-top-l-inc{
           display: inline-block;
           padding: 0 10px;
 
         }
       }
+
       .header-top-r {
         margin: 0;
         padding: 15px 0;
@@ -65,6 +74,7 @@ header {
         align-items: center;
         flex-wrap: wrap;
         justify-content: flex-end;
+
         li {
           white-space: nowrap;
           text-align: left;
@@ -72,22 +82,27 @@ header {
           padding-bottom: 5px;
           padding-top: 5px;
           display: block;
-          &:before {
+
+          &::before {
             content: none;
           }
+
           a {
             transition: $link-transition;
             &:hover {
               text-decoration: none;
             }
           }
+
           i {
             padding-right: 15px;
           }
         }
+
         .lang {
           position: relative;
           display: none;
+
           &.active{
             display: block;
 
@@ -105,6 +120,7 @@ header {
 
       }
     }
+
     .header-bottom {
       position: relative;
       transition: all 0.2s ease;
@@ -115,44 +131,50 @@ header {
       z-index: 999;
       display: block;
       background-color: #FFF;
-      &.menu_after_scroll_down {
-        background-color: rgba(255, 255, 255, 0.95);
-      }
       justify-content: space-between;
       padding: 5px 50px;
       padding-bottom: 0;
       align-items: center;
-      box-shadow: 0 2px 3px rgba(0,0,0,.35);
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+
+      &.menu_after_scroll_down {
+        background-color: rgba(255, 255, 255, 0.95);
+      }
 
       a {
         text-decoration: none;
         //transition: $link-transition;
+
         &:hover {
           font-weight: 400;
         }
       }
+
       .header-bottom-l {
         display: block;
         width: 100%;
+
         ul {
           list-style: none;
           list-style-type: none !important;
           list-style-position: inside;
-          li {
-            &:before {
-              content: none;
-            }
+
+          li::before {
+            content: none;
           }
         }
+
         .header-logo {
           max-width: 120px;
           margin: auto;
         }
+
         .navbar {
           border: none;
           width: 100%;
           position: static;
           margin-bottom: 0;
+
           button.navbar-toggle {
             border: 1px solid #2a86b5;
 
@@ -160,9 +182,11 @@ header {
               background-color: #2a86b5;
             }
           }
+
           .navbar-collapse.in {
             overflow: initial;
           }
+
           .collapsing {
             position: absolute;
             left: 0;
@@ -197,6 +221,7 @@ header {
             transform: rotate(-45deg);
           }
         }
+
         .header-bottom-menu {
           margin: 0;
           padding: 0;
@@ -208,15 +233,18 @@ header {
             padding: 0 10px;
             margin-top: 8px;
             border-bottom: 4px solid transparent;
+
             &.active,
             &:active{
               color: #5aaafa;
               border-bottom: 4px solid #5aaafa;
             }
+
             a:hover {
               background-color: transparent;
             }
           }
+
           .menu-dropdown {
             .sub-menu {
               transition: all .4s ease-out;
@@ -233,11 +261,13 @@ header {
               box-sizing: border-box;
               //transition: opacity .25s ease-in .1s;
               //transition: top 0s ease-out 0s;
+
               &.second-sub-menu {
                 .inner-item {
                   a {}
                 }
               }
+
               .inner-item {
                 display: block;
                 min-height: 54px;
@@ -245,6 +275,7 @@ header {
                 &:not(:first-child) {
                   border-top: 1px solid #444;
                 }
+
                 a {
                   display: block;
                   width: 100%;
@@ -253,19 +284,23 @@ header {
                   color: #fff;
                   align-items: baseline;
                   background-color: $second-color;
+
                   &.btn-more {
                     background-color: $orange;
                   }
+
                   &:hover {
                     color: $dark-orange;
                     text-decoration: none;
                   }
+
                   i {
                     padding-right: 10px;
                   }
                 }
               }
             }
+
             &.kp_open_menu > .sub-menu,
             &:hover > .sub-menu {
               transition: .4s ease-out;
@@ -276,9 +311,11 @@ header {
               //height: 480px;
               //min-height: 480px;
             }
+
             &:hover > a {
               color: $dark-orange!important;
             }
+
             .first-sub-menu {
               position: absolute;
               left: 0;
@@ -292,8 +329,10 @@ header {
                 }
               }
             }
+
             .third-sub-menu {
               max-height: 100%;
+
               >.inner-right-card > a {
                 min-height: 300px;
                 //height: 100%;
@@ -301,29 +340,36 @@ header {
                 padding: 15px;
                 transition: $link-transition;
                 background-color: $second-color;
+
                 & * {
                   text-align: left!important;
                 }
+
                 .itc_descr {
                   display: block;
                 }
+
                 .itc_descr * {
                   text-align: left!important;
                   display: block;
                 }
+
                 &:hover {
                   //background-color: #0e1c40;
                   p, .itc_descr {
                     color: $dark-orange;
                   }
                 }
-                h3, .itc_title {
+
+                h3,
+                .itc_title {
                   display: block;
                   color: #fff;
                   font-size: 20px;
                   text-align: left;
                   text-transform: uppercase;
                 }
+
                 .inner-right-card-box {
                   display: block;
                   margin-bottom: 20px;
@@ -333,6 +379,7 @@ header {
                   margin-right: auto;
                   overflow: hidden;
                   position: relative;
+
                   img {
                     position: static;
                     left: auto;
@@ -345,18 +392,21 @@ header {
                     object-fit: cover;
                   }
                 }
+
                 p {
                   text-align: center;
                   color: #fff;
                   text-transform: none;
                 }
               }
+
               .menu_btn_box {
                 position: absolute;
                 bottom: 7px;
                 left: 0;
                 right: 15px;
               }
+
               .inner-right-card-btn {
                 .btn-more {
                   font-size: 16px;
@@ -374,12 +424,15 @@ header {
               }
             }
           }
+
           > .menu-dropdown {
             display: block;
             float: left;
           }
+
           > .menu-dropdown > a {
             position: relative;
+
             &:before {
               position: absolute;
               left: 50%;
@@ -398,6 +451,7 @@ header {
               transition-delay: 0s;
             }
           }
+
           > .menu-dropdown.kp_open_menu > a:before,
           > .menu-dropdown:hover > a:before {
             transition: .4s ease-out;
@@ -412,16 +466,16 @@ header {
 }
 
 .search-box-wrapper {
-  padding: 0!important;
+  padding: 0 !important;
   margin: 0;
   margin-left: 20px;
   display: inline-block;
-  position: relative;
   height: 25px;
   width: 25px;
   float: right;
   padding: 0;
   position: relative;
+
   .search-box {
     display: inline-block;
     position: relative;
@@ -431,16 +485,14 @@ header {
     transform: translateX(-50%);
     float: right;
     padding: 0;
-    position: relative;
+
     input[type="text"] {
       height: 100%;
       font-size: 16px;
       display: inline-block;
       border: none;
       outline: none;
-      padding: 3px;
-      padding-right: 25px;
-      width: 0px;
+      width: 0;
       position: absolute;
       top: -3px;
       right: 0;
@@ -451,6 +503,7 @@ header {
       color: #000;
       padding: 0 10px;
       padding-right: 30px;
+
       &:focus {
         height: 32px;
         width: 400px;
@@ -463,25 +516,30 @@ header {
           color: $orange;
         }
       }
+
       &:-webkit-autofill {
         -webkit-box-shadow: inset 0 0 0 50px #fff !important;
         -webkit-text-fill-color: #000000 !important;
         color: #000000 !important;
       }
+
       &:hover {
         & ~ i {
           color: $orange;
         }
       }
+
       &:focus:hover {
         & ~ i {
           color: $orange;
         }
       }
     }
+
     input[type="text"]:focus ~ input[type="submit"] {
       z-index: 99;
     }
+
     input[type="submit"] {
       height: 100%;
       width: 100%;
@@ -500,12 +558,10 @@ header {
       transition: z-index 1s linear 0s;
       cursor: pointer;
     }
+
     i {
       position: relative;
       transition: $link-transition;
     }
   }
 }
-
-
-/* header end */

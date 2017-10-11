@@ -1,74 +1,87 @@
 //Binding Start
 .link_section {
   position: relative;
-
 }
+
 .for_link_top_center {
   padding-bottom: 130px;
 }
+
 .for_link_top_left,
 .for_link_top_right {
   padding-bottom: 220px;
 }
+
 .for_link_bottom_center + section {
   padding-top: 130px;
 }
+
 .for_link_bottom_left + section,
 .for_link_bottom_right + section {
   padding-top: 220px;
 }
+
 .link {
   display: none;
   position: absolute;
   z-index: 98;
   left: 50%;
-
 }
+
 .link_top_center {
   margin-left: -5px;
   bottom: -10px;
 }
+
 .link_top_left {
   margin-left: -322px;
   bottom: 0;
 }
+
 .link_top_right {
   margin-left: -25px;
   bottom: 0;
 }
+
 .link_bottom_center {
   bottom: -90px;
   margin-left: -5px;
 }
+
 .link_bottom_left,
 .link_bottom_right {
   bottom: -198px;
 }
+
 .link_bottom_left {
   margin-left: -323px;
 }
+
 .link_bottom_right {
   margin-left: -322px;
   bottom: -198px;
 }
-
 //Switch:
 .for_link_top_center .link_top_center {
   display: block;
 }
+
 .for_link_top_left .link_top_left {
   display: block;
 }
+
 .for_link_top_right .link_top_right {
   display: block;
 }
+
 .for_link_bottom_center .link_bottom_center {
   display: block;
 }
+
 .for_link_bottom_left .link_bottom_left {
   display: block;
 }
+
 .for_link_bottom_right .link_bottom_right {
   display: block;
 }
-// end Binding Start

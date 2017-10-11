@@ -2,10 +2,12 @@
 .dropdown-card {
   padding: 40px 0;
 }
+
 .dropdown-card .title {
   max-width: 750px;
   margin: auto auto 40px;
   text-align: center;
+
   h1 {
     font-size: 36px;
     margin-top: 0;
@@ -18,7 +20,7 @@
 }
 
 .dropdown-card .panel-default .panel-body {
-  padding: 0
+  padding: 0;
 }
 
 .dropdown-card .panel-default .panel-body .accordion-body-list {
@@ -26,17 +28,15 @@
   color: #000;
 }
 
-.dropdown-card .panel-default>.panel-heading {
+.dropdown-card .panel-default > .panel-heading {
   color: #fff;
   background-color: #2a86b5;
   border: none;
 }
 
-.dropdown-card .panel-default>.panel-heading .panel-title a {
+.dropdown-card .panel-default > .panel-heading .panel-title a {
   padding: 10px 30px;
   min-height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   flex: 0 1 auto;
   display: flex;
   -webkit-box-align: center;
@@ -45,12 +45,14 @@
   color: #fff;
   text-decoration: none;
   transition: $link-transition;
+
   &:hover {
     color: $orange;
     font-weight: normal;
   }
+
   i {
-    padding-right: 25px
+    padding-right: 25px;
   }
 }
 
@@ -60,17 +62,20 @@
   box-shadow: none;
   background-color: transparent;
 }
-.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group{
+
+.panel-group .panel-heading + .panel-collapse > .panel-body,
+.panel-group .panel-heading + .panel-collapse > .list-group {
   border-top: none;
 }
+
 .dropdown-card .panel .panel-heading {
   padding: 0;
-  border-radius: 0
+  border-radius: 0;
 }
 
 .accordion-toggle {
   position: relative;
-  display: block
+  display: block;
 }
 
 .accordion-toggle::after,
@@ -86,26 +91,24 @@
   background-color: #fff;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  -webkit-transition: all .25s;
-  transition: all .25s
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .accordion-toggle::before {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  opacity: 0
+  opacity: 0;
 }
 
 .accordion-toggle.collapsed::before {
-  -webkit-transform: rotate(0);
-  transform: rotate(0);
-  opacity: 1
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  opacity: 1;
 }
 
 .accordion-toggle.collapsed::after {
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg)
+  transform: rotate(-90deg);
 }
 
-
-/* dropdown card end */

@@ -15,7 +15,7 @@ import {masonryPopupVideo} from './common/_masonryPopupVideo';
 $(document).ready(function() {
   fixedHeaderScroll();
   hamburger();
-  slideMenu();
+  // slideMenu();
   iconsCard();
   iconCardSlider();
   solutionsCardSlider();
