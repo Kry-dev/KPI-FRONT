@@ -34,13 +34,14 @@ a {
 
 ol {
   padding-left: 1em;
+
   li {
     padding-bottom: 1em;
-
   }
 }
 
-body ul, body ul.solutions-slider {
+body ul,
+body ul.solutions-slider {
   list-style-type: none !important;
   padding: 0;
   margin: 0;
@@ -51,16 +52,17 @@ ul.solutions-slider > li::before {
   display: none !important;
 }
 
-ul{
+ul {
   list-style: none;
   list-style-type: none !important;
   list-style-position: inside;
   padding-left: 0;
+
   & > li {
     padding-bottom: 1em;
     position: relative;
 
-    &:focus{
+    &:focus {
       outline: none !important;
     }
   }
@@ -124,7 +126,7 @@ body .universal-slider {
   right: 35px;
 }
 
-.parallax{
+.parallax {
   background-attachment: fixed !important;
 }
 
@@ -240,10 +242,10 @@ body .at4-follow {
 }
 
 // end Add this
-.hide-accordion-list{
+.hide-accordion-list {
   display: block;
 }
 
-.show-mobile-list{
+.show-mobile-list {
   display: none;
 }
