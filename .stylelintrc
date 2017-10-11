@@ -8,5 +8,8 @@
     "extends": "stylelint-config-standard",
     "rules" : {
         "no-eol-whitespace": false,
+        "declaration-block-no-redundant-longhand-properties" : {
+            ignoreShorthands: ["display", "string"]
+        }
     }
 }

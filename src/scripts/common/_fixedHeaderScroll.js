@@ -1,5 +1,5 @@
 const fixedHeaderScroll = function() {
-  // header scroll fixed
+// header scroll fixed
 
 // Hide Header on on scroll down
   var didScroll;
@@ -23,19 +23,23 @@ const fixedHeaderScroll = function() {
 
     // Make sure they scroll more than delta
     if (Math.abs(lastScrollTop - st) <= delta) { return; }
-
+    var scrollUp = function() {
+      if (st + $(window).height() < $(document).height()) {
+        $('header').removeClass('fixed-header').addClass('not-fixed-header');
+      }
+    };
+    var scrollDown = function() {
+      $('header').removeClass('not-fixed-header').addClass('fixed-header');
+    };
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight) {
       // Scroll Down
-      $('header').removeClass('not-fixed-header').addClass('fixed-header');
+      scrollDown();
     } else {
       // Scroll Up
-      if (st + $(window).height() < $(document).height()) {
-        $('header').removeClass('fixed-header').addClass('not-fixed-header');
-      }
+      scrollUp();
     }
-
     lastScrollTop = st;
   }
 
@@ -51,10 +55,10 @@ const fixedHeaderScroll = function() {
   }
 
   // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera
-    document.documentElement.scrollTop = 0; // For IE and Firefox
-  }
+  // function topFunction() {
+  //  document.body.scrollTop = 0; // For Chrome, Safari and Opera
+  //  document.documentElement.scrollTop = 0; // For IE and Firefox
+  // }
 
 };
 export {fixedHeaderScroll};
