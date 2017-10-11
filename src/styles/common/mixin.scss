@@ -8,11 +8,12 @@
   padding: 0;
   border-radius: 50%;
   list-style: none;
-  list-style-type: none!important;
+  list-style-type: none !important;
   list-style-position: inside;
   /* 2 */
   box-sizing: content-box;
   /* 3 */
+
   > * {
     /* 4 */
     display: block;
@@ -23,14 +24,16 @@
     height: $item-size;
     margin: -$half-item;
   }
+
   $angle: (360 / $nb-items);
   $rot: 0;
   @for $i from 1 through $nb-items {
     @if not $class-for-IE {
-      >:nth-of-type(#{$i}) {
+      > :nth-of-type(#{$i}) {
         transform: rotate($rot * 1deg) translate($half-parent) rotate($rot * -1deg) scale($scale-k);
       }
     }
+
     @else {
       > .#{$class-for-IE}#{$i} {
         // If CSS transforms are not supported
@@ -39,6 +42,7 @@
         margin: $mt 0 0 $ml;
       }
     }
+
     $rot: ($rot + $angle);
   }
 }

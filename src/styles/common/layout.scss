@@ -8,9 +8,11 @@ body {
   font-size: 18px;
   padding-top: 70px;
 }
+
 .body_box {
   padding-top: 130px;
 }
+
 img {
   max-width: 100%;
 }
@@ -19,10 +21,12 @@ a {
   color: inherit;
   font-weight: inherit;
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
     color: $orange;
   }
+
   &:focus {
     text-decoration: none;
   }
@@ -37,36 +41,40 @@ ol {
 }
 
 body ul, body ul.solutions-slider {
-  list-style-type: none!important;
+  list-style-type: none !important;
   padding: 0;
   margin: 0;
 }
 
-ul.universal-slider>li:before,
-ul.solutions-slider>li:before {
-  display: none!important;
+ul.universal-slider > li::before,
+ul.solutions-slider > li::before {
+  display: none !important;
 }
 
 ul{
   list-style: none;
-  list-style-type: none!important;
+  list-style-type: none !important;
   list-style-position: inside;
   padding-left: 0;
-  &>li {
+  & > li {
     padding-bottom: 1em;
     position: relative;
+
     &:focus{
-      outline: none!important;
+      outline: none !important;
     }
   }
 }
+
 br {
   display: none;
 }
 
 body .universal-slider {
-  list-style-type: none!important;list-style-position: inside;
+  list-style-type: none !important;
+  list-style-position: inside;
 }
+
 .note-editor {
   br {
     display: inline;
@@ -81,7 +89,7 @@ body .universal-slider {
 }
 
 .body_box {
-  background-attachment: fixed!important;
+  background-attachment: fixed !important;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -93,6 +101,7 @@ body .universal-slider {
   margin-right: auto;
   margin-left: auto;
 }
+
 .hidden {
   display: none;
 }
@@ -103,7 +112,7 @@ body .universal-slider {
   height: 0;
   vertical-align: middle;
   border-top: 5px dashed;
-  border-top: 5px solid\9;
+  border-top: 5px solid;
   border-right: 3px solid transparent;
   border-left: 3px solid transparent;
 }
@@ -114,43 +123,52 @@ body .universal-slider {
   transform: translateY(-50%);
   right: 35px;
 }
+
 .parallax{
   background-attachment: fixed !important;
 }
+
 .content {
   position: relative;
   overflow: hidden;
 }
+
 .sp_content_box {
-  padding: 50px 0 70px 0;
+  padding: 50px 0 70px;
   text-align: center;
 }
+
 .sp_content_box h1 {
   color: #000;
 }
+
 .sp_content_box_light {
   background-color: white;
 }
+
 .sp_content_box_light  h1 {
   color: #000000;
 }
+
 .sp_bg_box {
   background-color: white;
   //background: url("/img/success.jpg") no-repeat 0 0;
   background-size: cover;
 }
+
 .sp_buttom_box_unit {
   margin-top: 26px;
 }
+
 .sp_buttom_box_unit .btn-more {
   min-width: 232px;
   text-align: center;
   border-radius: 2px;
 }
+
 .sp_content {
   flex: 0 1 auto;
   display: flex;
-  min-height: 1px;
   justify-content: center;
   align-items: baseline;
   height: 100%;
@@ -158,11 +176,13 @@ body .universal-slider {
   background-color: white;
   min-height: 862px;
 }
+
 .sp_footer {
   margin-top: -452px;
   z-index: 99;
   position: relative
 }
+
 footer.sp_footer .footer-content-wrapper .footer-row2 {
   padding-bottom: 0;
 }
@@ -176,22 +196,26 @@ footer.sp_footer .footer-content-wrapper .footer-row2 {
     padding-right: 0 !important;
     margin-right: 15px;
     display: inline-block;
-    transition: all ease-in-out .25s;
+    transition: all ease-in-out 0.25s;
+
     img {
       display: block;
     }
   }
+
   a {
     img {
-      transition: all ease-in-out .25s;
+      transition: all ease-in-out 0.25s;
     }
   }
+
   a:hover {
     i {
       background-color: #5aaafa;
     }
   }
 }
+
 //Fix LiveChat
 .LPMcontainer:focus {
   outline: none;
@@ -199,23 +223,27 @@ footer.sp_footer .footer-content-wrapper .footer-row2 {
 // end Fix LiveChat
 //Add this
 .at4-follow .at4-follow-inner {
-  padding-right: 0!important;
+  padding-right: 0 !important;
 }
+
 body .at4-follow {
   right: 0;
 }
+
 .at4-follow .at4-follow-inner .at4-follow-close-control div {
-  display: none!important;
+  display: none !important;
 }
+
 .at4-follow.at4-follow-24 .at4-follow-container {
   height: auto;
   width: 24px;
 }
-// end Add this
 
+// end Add this
 .hide-accordion-list{
   display: block;
 }
+
 .show-mobile-list{
   display: none;
 }

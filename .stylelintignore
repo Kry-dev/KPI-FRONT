@@ -1,2 +1,5 @@
 /build/styles/main.css
 /build/
+/src/styles/common/media-queries.scss
+/src/styles/common/mixin.scss
+/src/styles/common/fonts.scss
