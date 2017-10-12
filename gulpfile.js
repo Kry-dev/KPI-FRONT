@@ -18,10 +18,8 @@ const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 const gulpStylelint = require('gulp-stylelint');
 
-
 // ---------------------------------------- webpack --------------------------//
 gulp.task('webpack', function() {
-
     return gulp.src('src/scripts/main.js')
          .pipe(gulpWebpack(require('./webpack.config.js'),webpack))
          .on('error', function(){
@@ -29,7 +27,6 @@ gulp.task('webpack', function() {
          })
          .on('error', notify.onError({title: "Webpack error"}))
          .pipe(gulp.dest('./build'));    
-
 });
 //---------------------------------------- pug -----------------------------------------//
 gulp.task('pug', function() {
@@ -51,6 +48,7 @@ gulp.task('css', function () {
         .pipe(sass()).on('error', notify.onError({ title: 'Style' }))
         .pipe(gulpStylelint({
             failAfterError: false,
+            ignoreFiles: "build/**/*.css",
             reporters: [
               {formatter: 'string', console: true}
             ]

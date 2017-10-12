@@ -1,7 +1,4 @@
 {
-    ignoreFiles:[
-      'build/**/**/main.css'
-    ],
     "plugins": [
         "stylelint-scss"
     ],
