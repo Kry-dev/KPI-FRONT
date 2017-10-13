@@ -21,7 +21,9 @@ var fixedHeaderScroll = function() {
     var st = $(this).scrollTop();
 
     // Make sure they scroll more than delta
-    if (Math.abs(lastScrollTop - st) <= delta) { return; }
+    if (Math.abs(lastScrollTop - st) <= delta) {
+      return;
+    }
     var scrollUp = function() {
       if (st + $(window).height() < $(document).height()) {
         $('header').removeClass('fixed-header').addClass('not-fixed-header');
@@ -43,7 +45,9 @@ var fixedHeaderScroll = function() {
   }
 
   // When the user scrolls down 160px from the top of the document, show the button
-  window.onscroll = function() { scrollFunction(); };
+  window.onscroll = function() {
+    scrollFunction();
+  };
 
   function scrollFunction() {
     if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {

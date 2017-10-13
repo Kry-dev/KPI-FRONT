@@ -1,6 +1,5 @@
-var masonryPopupVideo = function() {
+const masonryCard = function() {
   $('.mason-video-link').magnificPopup({
-    disableOn: 400,
     type: 'iframe',
     iframe: {
       patterns: {
@@ -26,4 +25,4 @@ var masonryPopupVideo = function() {
     }
   });
 };
-export {masonryPopupVideo};
+export {masonryCard};

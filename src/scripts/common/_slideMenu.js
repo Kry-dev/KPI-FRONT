@@ -19,7 +19,9 @@ var slideMenu = function() {
   // accordion menu
   $('#slide-menu ul li a').on('click', function(e) {
     // allow links to be followed if they don't have a sub-menu
-    if ( !$(this).parent().has('ul').length ) { return; }
+    if (!$(this).parent().has('ul').length) {
+      return;
+    }
 
     // we have a sub-menu, so stop the link from being followed
     e.preventDefault();

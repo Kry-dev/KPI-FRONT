@@ -1,14 +1,15 @@
 doctype html
 html
-    include common/_head
-    body
-        include common/_index-header
+	include common/_head
+	body
+		include common/_index-header
 
-        <!-- page content start -->
-        section.content
-            include sections/_icon-card
-            include sections/_blog-card
-        <!--  container start -->
+		<!-- page content start -->
+		section.content
+			//include sections/_masonry
+			include sections/_icon-card
+			include sections/_blog-card
+		<!--  container start -->
 
-        include common/_footer
-        include common/_scripts
+		include common/_footer
+		include common/_scripts

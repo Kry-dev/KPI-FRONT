@@ -3,6 +3,7 @@ import {slideMenu} from './common/_slideMenu';
 import {fixedHeaderScroll} from './common/_fixedHeaderScroll';
 import {iconsCard} from './common/_iconsCard';
 import {iconCardSlider} from './common/_iconCardSlider';
+import {masonryCard} from './common/_masonryCard';
 import {solutionsCardSlider} from './common/_solutionsCardSlider';
 import {knowledgeCardSlider} from './common/_knowledgeCardSlider';
 import {universalCardSlider} from './common/_universalCardSlider';
@@ -20,6 +21,7 @@ $(document).ready(function() {
   fixedHeaderScroll();
   iconsCard();
   iconCardSlider();
+  masonryCard();
   solutionsCardSlider();
   knowledgeCardSlider();
   universalCardSlider();
