@@ -249,3 +249,25 @@ body .at4-follow {
 .show-mobile-list {
   display: none;
 }
+
+.mfp-iframe-holder .mfp-content {
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  position: absolute;
+  width: auto;
+  max-width: 800px !important;
+  height: 90%;
+}
+
+.mfp-iframe-holder .mfp-content .mfp-iframe-scaler {
+  padding: 0;
+}
+
+body .mfp-iframe-holder .mfp-close {
+  top: 0;
+  right: -20px;
+  padding-right: 34px;
+  color: #333;
+}
