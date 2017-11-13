@@ -1406,6 +1406,10 @@
   .parallax{
     background-attachment: inherit !important;
   }
+  .universal-hero {
+    padding-top: 50px;
+    margin-top: -100px;
+  }
 }
 @media (max-width: 600px){
   .right-slide-menu{
