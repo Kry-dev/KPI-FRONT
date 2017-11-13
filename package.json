@@ -23,7 +23,7 @@
     "eslint-plugin-react": "^7.3.0",
     "eslint-plugin-standard": "^3.0.1",
     "favicons-webpack-plugin": "0.0.7",
-    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cheerio": "~0.6.2",
     "gulp-csso": "^2.0.0",

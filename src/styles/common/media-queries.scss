@@ -31,16 +31,7 @@
 
   }
 }
-@media (min-width: 600px) {
-  footer .footer-content-wrapper>div {
-    flex-basis: 50%;
-    text-align: left;
-  }
-  footer .footer-content-wrapper .footer-logos {
-    flex-basis: 100%;
-    text-align: center;
-  }
-}
+
 @media (min-width: 769px) {
   header .header-wrapper {
     .header-top {
@@ -205,16 +196,8 @@
   .g-map iframe {
     height: 300px;
   }
-  footer .footer-content-wrapper .footer-row2 .footer-social,
-  footer .footer-content-wrapper .footer-row2 .footer-partner,
-  footer .footer-content-wrapper .footer-row2 .footer-mail-form,
-  footer .footer-content-wrapper .footer-row .footer-logos,
-  footer .footer-content-wrapper .footer-row>div {
-    flex-basis: 50%;
-  }
-  footer .footer-content-wrapper .footer-row2 .footer-mail-form {
-    padding-right: 10%;
-  }
+
+
 }
 @media (min-width: 992px) {
   .container {
@@ -361,13 +344,7 @@
   .training .training-main {
     display: flex;
   }
-  footer .footer-content-wrapper .footer-row {
-    justify-content: flex-start;
-  }
-  footer .footer-content-wrapper .footer-row .footer-logos,
-  footer .footer-content-wrapper .footer-row>div {
-    flex-basis: 33%;
-  }
+
 }
 @media (min-width: 1200px) {
   .container {
@@ -440,15 +417,7 @@
   .g-map iframe {
     height: 400px;
   }
-  footer .footer-content-wrapper .footer-row2 .footer-partner {
-    flex-basis: 17%;
-  }
-  footer .footer-content-wrapper .footer-row2 .footer-social {
-    flex-basis: 19%;
-  }
-  footer .footer-content-wrapper .footer-row .footer-logos {
-    flex-basis: 33%;
-  }
+
 }
 @media (min-width: 1224px) {
   .container {
@@ -587,13 +556,6 @@
   }
   header .header-wrapper .header-bottom .header-bottom-l .header-bottom-menu>li.header-bottom-menu-right {
     float: right;
-  }
-  footer .footer-content-wrapper .footer-row>div {
-    flex-basis: 19%;
-  }
-
-  footer .footer-content-wrapper .footer-row .footer-logos {
-    flex-basis: 24%;
   }
 }
 @media (max-width: 1880px) {
@@ -916,12 +878,10 @@
   footer .container {
     padding: 0 15px;
   }
-  footer .footer-content-wrapper .footer-row2 .footer-mail-form form input[type="email"] {
-    margin-right: 0;
-  }
-  footer .footer-content-wrapper .footer-row .footer-logos .footer-fax,
-  .footer-logo-img {
-    margin-bottom: 20px;
+  .footer-content-wrapper{
+    .footer-descr{
+      padding-bottom: 20px;
+    }
   }
   .slick-prev {
     left: -17px;
@@ -1465,6 +1425,9 @@
       max-width: 180px;
       margin: 0 auto;
     }
+  }
+  footer .footer-content-wrapper .footer-mail-form form button{
+    padding: 7px 15px;
   }
 
 

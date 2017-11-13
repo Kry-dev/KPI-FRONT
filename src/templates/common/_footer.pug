@@ -7,90 +7,68 @@ footer
     .container
         .footer-content-wrapper
             .footer-row
-                .footer-logos
-                    .footer-logo-img
-                        img(src='img/kpi-transparency.png', alt='logo')
-                    .footer-fax
-                        p (877) KPI-FOR-U ext. 117
-                        a(href='mailto:Info@MyKnowledgeProviders.com') Info@MyKnowledgeProviders.com
-                    .footer-logo-img
-                        img(src='img/ibm.png', alt='logo')
-                .footer-list
+                .col-md-12
+                    .footer-logos
+                        .footer-logo-img
+                            img(src='img/kpiibmlogo.jpg', alt='logo')
+                .col-md-6.col-xs-12
+                    p.footer-descr We did not get to where we are today overnight. Our combined 30+ years of experience entitles us to be called experts in Analytics, Performance Management and Digital Marketing Solutions.
+                .col-md-6.col-xs-12
+                    .footer-mail-form
+                        p Stay connected
+                        form(action='http://www.pages08.net/knowledgeprovidersinc/signup/')
+                            input(type='email', placeholder='Email')
+                            button.btn-more(type='submit') Sign up now
+            .footer-row
+                .col-md-2.col-xs-6.footer-list
+                    h4.footer-list-title Discover
+
                     ul
-                        li Explore by Services
                         li
-                            a(href='#') Consulting
+                            a(href='http://kpidigital.com/analyticshome') Analytics
                         li
-                            a(href='#') Support and Managed
+                            a(href='http://kpidigital.com/digitalmarketinghome') Digital Marketing
                         li
-                            a(href='#') Advisory
-                        li
-                            a(href='#') Training
-                        li
-                            a(href='#') IBM Software Licence
-                        li
-                            a(href='#') Practice Leaders
-                        li
-                            a(href='#') Cloud
-                .footer-list
+                            a(href='http://kpidigital.com/performancemanagement') Performance Management
+
+                .col-md-2.col-xs-6.footer-list
+                    h4.footer-list-title About
                     ul
-                        li Explore by Solution
                         li
-                            a(href='#') Industry
+                            a(href='http://kpidigital.com/ourleadershipteam') Who we are
                         li
-                            a(href='#') LOB
+                            a(href='http://kpidigital.com/careers') Careers
                         li
-                            a(href='#') Role
-                        li
-                            a(href='#') Application
-                        li
-                            a(href='#') On the Cloud
-                .footer-list
+                            a(href='http://kpidigital.com/blogs') Blogs
+                .col-md-2.col-xs-5.footer-list
+                    h4.footer-list-title Contact
                     ul
-                        li Explore by Company
                         li
-                            a(href='#') Who We Are
+                            a(href='tel:8775743678') (877) 574-3678 ext.117
                         li
-                            a(href='#') Clients
+                            a(href='mailto:info@KPIDigital.com') info@KPIDigital.com
                         li
-                            a(href='#') Leadership Team
-                        li
-                            a(href='#') Our Partners
-                        li
-                            a(href='#') Our Teams
-                .footer-list
-                    ul
-                        li Explore by Careers
-                        li
-                            a(href='#') Careers
-                        li
-                            a(href='#') Culture
-                        li
-                            a(href='#') Professional Development
-                        li
-                            a(href='#') Apply Now
-            .footer-row2
-                .footer-social
-                    ul
-                        li Follow us on
-                        li
-                            a(href='http://www.linkedin.com/company/knowledge-providers-inc.')
-                                i.fa.fa-linkedin(aria-hidden='true')
-                        li
-                            a(href='https://twitter.com/KnowledgeKPI')
-                                i.fa.fa-twitter(aria-hidden='true')
-                        li
-                            a(href='http://www.youtube.com/user/MyKnowledgeProviders')
-                                i.fa.fa-youtube(aria-hidden='true')
-                        li
+                            p Canada
+                .col-md-6.col-xs-7.footer-list
+                    h4.footer-list-title Follow us on
+                    ul.footer-socials
+                        li.social-logo
                             a(href='https://www.facebook.com/KnowledgeProvidersInckpi')
-                                i.fa.fa-facebook(aria-hidden='true')
-                .footer-mail-form
-                    div
-                        p stay connected
-                        form(action='')
-                            input.form-control(type='email', placeholder='Email')
-                            button.btn-more(type='submit') Submit
+                                img(src='img/facebook.svg', alt='facebook')
+                        li.social-logo
+                            a(href='https://www.linkedin.com/company/11162106/')
+                                img(src='img/linkedin.svg', alt='linkedin')
+                        li.social-logo
+                            a(href=' https://twitter.com/KPI_Digital')
+                                img(src='img/twitter.svg', alt='twitter')
+                        li.social-logo
+                            a(href='https://www.instagram.com/kpidigitalsolutions/')
+                                img(src='img/instagram.svg', alt='instagram')
+                        li.social-logo
+                            a(href='https://www.youtube.com/channel/UCAql8EIq1cYg0T_eWzz_qlg')
+                                img(src='img/youtube.svg', alt='youtube')
+
+
 
     button#scrollTop(title='Go to top')
         i.fa.fa-angle-up
