@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue';
   background-attachment: fixed;
   font-size: 18px;
   padding-top: 70px;
@@ -185,6 +185,9 @@ body .universal-slider {
   position: relative;
 }
 
+iframe.mfp-iframe{
+  background: #fcf9fb;
+}
 footer.sp_footer .footer-content-wrapper .footer-row2 {
   padding-bottom: 0;
 }

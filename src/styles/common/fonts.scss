@@ -10,9 +10,12 @@
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('../fonts/helveticaneue/helveticaneue.eot');
-  src: url('../fonts/helveticaneue/helveticaneue.eot?#iefix') format('embedded-opentype'),
+  src: url('../fonts/helveticaneue/helveticaneue.woff2') format('woff2'),
   url('../fonts/helveticaneue/helveticaneue.woff') format('woff'),
-  url('../fonts/helveticaneue/helveticaneue.ttf')  format('truetype'),
+  url('../fonts/helveticaneue/helveticaneue.ttf') format('truetype'),
+  url('../fonts/helveticaneue/helveticaneue.eot?#iefix') format('embedded-opentype'),
   url('../fonts/helveticaneue/helveticaneue.svg#svghelvetica') format('svg');
   font-weight: 300;
+  font-style: normal;
 }
+
