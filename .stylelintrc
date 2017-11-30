@@ -3,6 +3,9 @@
         "stylelint-scss"
     ],
     "extends": "stylelint-config-standard",
+    "ignoreFiles": [
+        "./**/*.css"
+    ],
     "rules" : {
         "no-eol-whitespace": false,
         "declaration-block-no-redundant-longhand-properties" : {

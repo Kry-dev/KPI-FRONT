@@ -60,11 +60,13 @@ footer {
 
     .footer-list {
       flex: 0 1 auto;
-      .footer-list-title{
+
+      .footer-list-title {
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 15px;
       }
+
       ul {
         padding-left: 0;
 
@@ -86,6 +88,7 @@ footer {
       flex: 0 1 auto;
       flex-basis: 100%;
       justify-content: flex-start;
+
       p {
         padding: 0;
         font-size: 16px;
@@ -99,26 +102,29 @@ footer {
       }
     }
   }
-  .footer-socials{
+
+  .footer-socials {
     display: flex;
     padding: 0;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
-    .social-logo{
+
+    .social-logo {
       width: 50px;
       height: 50px;
       border-radius: 50%;
 
-      &+.social-logo{
+      & + .social-logo {
         margin-left: 10px;
       }
 
-      a{
+      a {
         width: 100%;
         transition: $link-transition;
         opacity: 0.9;
-        &:hover{
+
+        &:hover {
           opacity: 1;
         }
       }
